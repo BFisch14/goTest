@@ -15,7 +15,7 @@ pipeline {
         stage('Compile') {
             steps {
                 echo 'Hello world'
-                sh 'go version'
+                sh '${root}/bin/go build'
             }
         }
     }
