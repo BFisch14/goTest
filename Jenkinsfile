@@ -5,9 +5,9 @@ pipeline {
     }
 
     environment {
-        GO11MODULE = 'on',
-        GOROOT= '${root}',
-        PATH+GO= '${root}/bin'
+        GO11MODULE = 'on'
+        GOROOT = '${root}'
+        PATH+GO = '${root}/bin'
     }
 
     
