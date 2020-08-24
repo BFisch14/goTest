@@ -8,9 +8,9 @@ pipeline {
         GO11MODULE = 'on'
     } 
     stages {
-        stage('build') {
+        stage('Compile') {
             steps {
-                sh 'go build'
+                sh 'go version'
             }
         }
     }
