@@ -7,7 +7,6 @@ pipeline {
     environment {
         GO11MODULE = 'on'
         GOROOT = '${root}'
-        PATH+GO = '${root}/bin'
     }
 
     
@@ -15,6 +14,7 @@ pipeline {
     stages {
         stage('Compile') {
             steps {
+                echo 'Hello world'
                 sh 'go version'
             }
         }
