@@ -5,8 +5,13 @@ pipeline {
     }
 
     environment {
-        GO11MODULE = 'on'
-    } 
+        GO11MODULE = 'on',
+        GOROOT= '${root}',
+        PATH+GO= '${root}/bin'
+    }
+
+    
+
     stages {
         stage('Compile') {
             steps {
