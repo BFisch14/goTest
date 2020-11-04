@@ -22,9 +22,6 @@ pipeline {
             }
         }
         stage('Release') {
-            when {
-                buildingTag()
-            }
             environment {
                 GITHUB_TOKEN = credentials('github-token')
             }
